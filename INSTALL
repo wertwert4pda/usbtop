@@ -6,9 +6,9 @@ Prerequisites:
   * libpcap
   * libboost >= 1.48.0
 
- Under Debian, install these packages :
+ Under Ubuntu, install these packages :
 
-  # aptitude install libboost-dev libpcap-dev libboost-thread-dev libboost-system-dev
+  # apt-get install libboost-dev libpcap-dev libboost-thread-dev libboost-system-dev
 
 Compilation instructions:
 -------------------------
@@ -16,7 +16,7 @@ Compilation instructions:
 Create a '_build' directory and then use CMake to create the required Makefile's
 
  $ cd /path/to/usbtop
- $ mkdir _build
+ $ mkdir _build && cd _build
  $ cmake -DCMAKE_BUILD_TYPE=Release ..
 
 Then, compile usbtop:
